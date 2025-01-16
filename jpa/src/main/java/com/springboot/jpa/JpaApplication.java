@@ -10,5 +10,5 @@ public class JpaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(JpaApplication.class, args);
 	}
-         ConfigurableApplicationContext contexto = SpringApplication.run(JpaApplication.class, args);
+        ConfigurableApplicationContext contexto = SpringApplication.run(JpaApplication.class, args);
 }
