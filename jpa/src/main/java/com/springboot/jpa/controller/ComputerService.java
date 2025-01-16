@@ -1,12 +1,18 @@
 
 package com.springboot.jpa.controller;
 
+import com.springboot.jpa.model.classes.Computer;
+import com.springboot.jpa.model.persistence.ComputerRepository;
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 @Service
 public class ComputerService {
     private final ComputerRepository computerRepository;
     
     @Autowired
-    public ComputerService(ComputerRepositpry computerRepository){
+    public ComputerService(ComputerRepository computerRepository){
         this.computerRepository = computerRepository;
     }
     
@@ -19,6 +25,6 @@ public class ComputerService {
     }
 
     public List<Computer> findByName(String name) {
-        return computerRepository.findByName(name);
+        return computerRepository.findByBrand(name);
     }
 }

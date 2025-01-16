@@ -1,7 +1,8 @@
 
 package com.springboot.jpa.model.classes;
 
-import javax.annotation.processing.Generated;
+import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 
 @Entity
 public class Computer {

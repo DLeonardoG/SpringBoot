@@ -1,6 +1,8 @@
 
 package com.springboot.jpa.model.classes;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import javax.annotation.processing.Generated;
 
 @Entity
