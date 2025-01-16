@@ -5,23 +5,15 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "computer", schema = "computers")
 public class Computer {
-    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    
     private String name;
     private String price;
     private String brand;
-
-    public Computer() {
-    }
-
-    public Computer(String name, String price, String brand) {
-        this.name = name;
-        this.price = price;
-        this.brand = brand;
-    }
 
     public Long getId() {
         return id;
