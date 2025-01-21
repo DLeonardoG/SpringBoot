@@ -10,8 +10,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class CarroService {
     private final CarroRepository carroRepository;
-    
-    @Autowired
+
     public CarroService(CarroRepository carroRepository){
         this.carroRepository = carroRepository;
     }
